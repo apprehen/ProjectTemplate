@@ -1,0 +1,26 @@
+logs/
+npm-debug.log
+node_modules/
+coverage/
+.idea/
+run/
+logs/
+.DS_Store
+.vscode
+*.swp
+*.lock
+*.js
+.eslintcache
+
+app/**/*.js
+test/**/*.js
+config/**/*.js
+app/**/*.map
+test/**/*.map
+config/**/*.map
+
+# Ignore all log files
+logs/*.log
+
+# Ignore the environment file
+.env

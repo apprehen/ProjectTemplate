@@ -8,7 +8,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'prettier'
   ],
   overrides: [
     {
@@ -31,7 +32,14 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        semi: false,
+        trailingComma: 'none'
+      }
+    ],
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-explicit-any': ['off']
   }
